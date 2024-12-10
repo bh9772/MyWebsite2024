@@ -16,6 +16,39 @@
       box-sizing: border-box;
     }
 
+    /* Navigation Bar Styles */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #003366;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700; /* Gold color on hover */
+    }
+
     /* Header Styles */
     h1 {
       color: #003366;
@@ -114,16 +147,40 @@
         font-size: 1em;
         padding: 0 10px;
       }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      nav ul li a {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#history">History</a></li>
+      <li><a href="#more-info">More Information</a></li>
+      <li><a href="#goals">Chelsea Goals (23/24)</a></li>
+      <li><a href="#early-years">Early Years</a></li>
+      <li><a href="#abramovich-era">The Abramovich Era</a></li>
+    </ul>
+  </nav>
+
   <!-- Main Heading -->
   <h1>All About Chelsea FC</h1>
 
   <!-- Chelsea History Section -->
-  <section>
+  <section id="history">
     <h2>Chelsea's History</h2>
     <p>
       Chelsea is one of five clubs and the first English club to have won all three pre-1999 main European club competitions, the "European Treble" of the European Cup/UEFA Champions League, European/UEFA Cup Winners' Cup, and UEFA Cup/UEFA Europa League. They are the only club to have won all three major European competitions twice. They are the only London club to have won the Champions League and the Club World Cup. Domestically, the club has won six league titles, eight FA Cups, five League Cups, and four FA Community Shields. Internationally, they have won the UEFA Champions League, the UEFA Europa League, the UEFA Cup Winners' Cup, and the UEFA Super Cup twice each, and the FIFA Club World Cup once. In terms of overall trophies won, Chelsea is the fifth-most successful club in English football.
@@ -131,7 +188,7 @@
   </section>
 
   <!-- Chelsea More Information Section -->
-  <section>
+  <section id="more-info">
     <h3>More Information</h3>
     <p>
       Chelsea Football Club is a professional football club based in Fulham, West London, England. They compete in the Premier League, the top tier of English football. Founded in 1905, the team plays their home games at Stamford Bridge. The club won their first major honour, the League championship, in 1955. They won the FA Cup for the first time in 1970, their first European honour, the Cup Winners' Cup, in 1971, and became the third English club to win the Club World Cup in 2022.
@@ -139,13 +196,13 @@
   </section>
 
   <!-- Chelsea Goals Section with Video Embed -->
-  <section>
+  <section id="goals">
     <h4>Chelsea's Goals from the 23/24 Season</h4>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ze6qKJkf_-g?si=4AciCMko6y6x2AzJ" title="Chelsea Goals 23/24 Season" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
 
   <!-- Chelsea Early Years Section -->
-  <section>
+  <section id="early-years">
     <h5>Chelsea and the Early Years: Building Foundations</h5>
     <p>
       Founded in 1905, Chelsea initially experienced limited success. The club spent much of its early years fluctuating between divisions, striving to establish a strong identity. Their first major trophy, the league championship, came in 1955. This win marked a turning point, bringing newfound respect and momentum. Despite this, Chelsea spent the next few decades in and out of the top ranks, consistently pushing but facing financial and competitive struggles. In the 1990s, the club began to see more stability. Under the management of Glenn Hoddle and later Gianluca Vialli, Chelsea won their first FA Cup in 26 years (in 1997) and made significant strides in European competitions. Their resurgence set the stage for a new era.
@@ -153,7 +210,7 @@
   </section>
 
   <!-- The Abramovich Era Section -->
-  <section>
+  <section id="abramovich-era">
     <h6>The Abramovich Era: A New Powerhouse in Chelsea FC</h6>
     <p>
       In 2003, Russian billionaire Roman Abramovich purchased Chelsea, bringing unprecedented investment and ambition. Abramovich’s financial backing and vision transformed Chelsea into a powerhouse in English football almost overnight. With funds to attract top talent, the club brought in stars like Didier Drogba, Frank Lampard, and Petr Čech, establishing a core group of players that would become club legends. Abramovich’s appointment of José Mourinho in 2004 marked the beginning of Chelsea’s dominance in the Premier League. Known for his tactical acumen and winning mentality, Mourinho led the team to back-to-back league titles in 2005 and 2006. Chelsea’s defensive solidity, combined with attacking power, made them nearly unbeatable. Mourinho’s influence reshaped Chelsea’s identity, instilling a culture of resilience and a thirst for titles.
@@ -162,13 +219,4 @@
 
   <!-- Chelsea FC Image -->
   <section>
-    <img src="https://resources.premierleague.pulselive.com/photo-resources/2024/12/01/4dbe725f-a465-4e85-9045-b15309c2e581/Cole-Palmer-v-Villa.jpg?width=600&height=400" alt="Chelsea FC Players in Action" />
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Chelsea FC. All rights reserved. | <a href="https://www.chelseafc.com" style="color: #ffffff;">Visit Official Website</a></p>
-  </footer>
-
-</body>
-</html>
+    <img src="https://resources.premierleague.pulselive
